@@ -76,6 +76,24 @@ public class Game_Store {
         if (num==3){
             game3.displayGameInfo();
         }
+        if (num==4){
+            game4.displayGameInfo();
+        }
+        if (num==5){
+            game5.displayGameInfo();
+        }
+        if (num==6){
+            game6.displayGameInfo();
+        }
+        if (num==7){
+            game7.displayGameInfo();
+        }
+        if (num==8){
+            game8.displayGameInfo();
+        }
+        if (num==9){
+            game9.displayGameInfo();
+        }
 
 
     }
