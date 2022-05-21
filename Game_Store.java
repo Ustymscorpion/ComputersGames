@@ -7,47 +7,47 @@ public class Game_Store {
     // створення об'єкту класу Game. game1 - об'єкт
     game1.setTitle("Minecraft");
     game1.setYear(2009);
-    game1.setGenre("Sandbox, survival");
+    game1.setGenre("sandbox");//, survival");
 
      Game game2 = new Game();
      game2.setTitle("Cyberpunk 2077");
      game2.setYear(2020);
-     game2.setGenre("Action role-playing");
+     game2.setGenre("Action role game");
 
       Game game3 = new Game();
       game3.setTitle("S.T.A.L.K.E.R. Shadow of Chernobyl");
       game3.setYear(2007);
-      game3.setGenre("First Person Shooter, Role game, Survival horror");
+      game3.setGenre("First-person shooter");//, role game, Survival horror");
 
        Game game4 = new Game();
        game4.setTitle("S.T.A.L.K.E.R. Clear Sky");
        game4.setYear(2008);
-       game4.setGenre("First Person Shooter, Role game, Survival horror");
+       game4.setGenre("First-person shooter");//, role game, Survival horror");
 
         Game game5 = new Game();
         game5.setTitle("S.T.A.L.K.E.R.: Call of Pripyat");
         game5.setYear(2009);
-        game5.setGenre("First Person Shooter, Role game, Survival horror");
+        game5.setGenre("First-person shooter");//, role game, Survival horror");
 
          Game game6 = new Game();
          game6.setTitle("Metro 2033 / Metro 2033 Redux");
          game6.setYear(2006 / 2014);
-         game6.setGenre("First-person shooter, stealth, survival horror");
+         game6.setGenre("First-person shooter");//, role game,stealth, survival horror");
 
           Game game7 = new Game();
           game7.setTitle("Metro: Last Light / Metro: Last Light Redux");
           game7.setYear(2013 / 2014);
-          game7.setGenre("First-person shooter, stealth, survival horror");
+          game7.setGenre("First-person_shooter");//, role game, stealth, survival_horror");
 
            Game game8 = new Game();
            game8.setTitle("Metro Exodus");
            game8.setYear(2019);
-           game8.setGenre("First-person shooter, adventure video game, open world, linearity");
+           game8.setGenre("First-person shooter");//, role game, adventure video game, open world, linearity");
 
             Game game9 = new Game();
             game9.setTitle("Ostriv");
             game9.setYear(2016/2020);//2016-анонс 2020-випуск
-            game9.setGenre("Urban Simulator, Strategy Video, Indie Games, Early Access, Simulation, Strategy");
+            game9.setGenre("Urban Simulator");//, Strategy Video, Indie Games, Early Access, Simulation, Strategy");
 
 
         GameManagerImpl gameManager = new GameManagerImpl();
@@ -94,7 +94,12 @@ public class Game_Store {
         if (num==9){
             game9.displayGameInfo();
         }
-
+     sc.nextLine();
+     System.out.println("Genres: Action role game, sandbox, First-person shooter");
+     System.out.println("Enter genre: ");
+     String genre = sc.nextLine();
+     gameManager.searchByGenre(genre);
 
     }
+
 }

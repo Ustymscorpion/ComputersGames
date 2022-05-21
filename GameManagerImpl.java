@@ -33,4 +33,14 @@ public class GameManagerImpl implements GameManager{
         }
     }
 
+    @Override
+    public void searchByGenre(String genre) {
+        for (int i = 0; i < games.size(); i++) {
+            // equals - дорівнює
+            if (games.get(i).getGenre().equals(genre)) {
+                games.get(i).displayGameInfo();
+            }
+        }
+    }
+
 }

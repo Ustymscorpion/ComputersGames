@@ -4,5 +4,6 @@ public interface GameManager { //інтерфейс
     void deleteGame(String title);//видаляти гру зі списку за назвою
     void playGame(String title);//грати гру
     void showAll(); //показати всі ігри
+    void searchByGenre(String genre);
 
 }
