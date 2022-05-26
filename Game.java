@@ -3,6 +3,8 @@ public class Game {
     int year;
     String genre;
 
+    String price;
+
   /*
      гетер для поля title
      get - отримувати
@@ -21,6 +23,8 @@ public class Game {
         return genre;
     }
 
+    public String getPrice() { return price; }
+
   /*
     сетери для поля title
     set - встановлювати
@@ -38,8 +42,9 @@ public class Game {
         this.genre = genre;
     }
 
+    public void setPrice(String price) { this.price = price; }
     public void displayGameInfo(){
-        System.out.println(this.title + " was released in " + this.year);
+        System.out.println(this.title + " was released in " + this.year + " the game price is " + this.price);
     }
 
 }
