@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +30,7 @@ public class GameManagerImpl implements GameManager{
     @Override
     public void showAll() {
         for (int i = 0; i < games.size(); i++) {
+            System.out.print((i+1) + ". ");
             System.out.println(games.get(i).getTitle());
         }
     }
