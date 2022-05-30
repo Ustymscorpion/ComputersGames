@@ -1,9 +1,9 @@
 public class Game {
-    String title;
-    int year;
-    String genre;
+   private String title;
+   private int year;
+   private String genre;
 
-    String price;
+   private String price;
 
   /*
      гетер для поля title

@@ -6,4 +6,8 @@ public interface GameManager { //інтерфейс
     void showAll(); //показати всі ігри
     void searchByGenre(String genre);
 
+    void sortByTitle();
+
+    void searchByLetter();
+
 }

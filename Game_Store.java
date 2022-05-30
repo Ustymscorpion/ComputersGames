@@ -2,20 +2,20 @@ import java.util.Scanner;
 
 public class Game_Store {
 
-  public static void main(String[] args){
+  public static void main(String[] args) {
 
-    Game game1 = new Game();
-    // створення об'єкту класу Game. game1 - об'єкт
-    game1.setTitle("Minecraft");
-    game1.setYear(2009);
-    game1.setGenre("sandbox");//, survival");
-    game1.setPrice(" 23,95 € ");
+      Game game1 = new Game();
+      // створення об'єкту класу Game. game1 - об'єкт
+      game1.setTitle("Minecraft");
+      game1.setYear(2009);
+      game1.setGenre("sandbox");//, survival");
+      game1.setPrice(" 23,95 € ");
 
-     Game game2 = new Game();
-     game2.setTitle("Cyberpunk 2077");
-     game2.setYear(2020);
-     game2.setGenre("Action role game");
-     game2.setPrice(" 899 UAH / 59,99 € ");
+      Game game2 = new Game();
+      game2.setTitle("Cyberpunk 2077");
+      game2.setYear(2020);
+      game2.setGenre("Action role game");
+      game2.setPrice(" 899 UAH / 59,99 € ");
 
    /*stalker*/ Game game3 = new Game();
                game3.setTitle("S.T.A.L.K.E.R. Shadow of Chernobyl");
@@ -78,7 +78,7 @@ public class Game_Store {
              game12.setPrice("379 UAH / 24,99 € ");
 
              Game game13 = new Game();
-             game13.setTitle("Half-Life: Alyx");
+             game13.setTitle("Half-Life: Alyx"); // λ
              game13.setYear(2020);
              game13.setGenre("VR");
              game13.setPrice("699 UAH / 49,99 € ");
@@ -149,7 +149,7 @@ public class Game_Store {
                game24.setGenre("brain teaser");
                game24.setPrice("169 UAH / 8,19 € ");
 
-               Game game26 = new Game();
+               Game game25  = new Game();
 
         GameManagerImpl gameManager = new GameManagerImpl();
         gameManager.addGame(game1);
@@ -239,7 +239,14 @@ public class Game_Store {
      System.out.println("Enter genre: ");
      String genre = sc.nextLine();
      gameManager.searchByGenre(genre);
-
+      System.out.println("");
+     gameManager.sortByTitle();
+     gameManager.showAll();
+     gameManager.deleteGame("Cyberpunk 2077");
+      System.out.println("");
+     gameManager.showAll();
   }
 
 }
+
+
